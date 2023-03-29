@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+	
+	
+
+  <ItemGroup>
+    <None Include="wwwroot\images\SK-A-1595.jpg" />
+    <None Include="wwwroot\images\SK-A-1935.jpg" />
+    <None Include="wwwroot\images\SK-A-2344.jpg" />
+    <None Include="wwwroot\images\SK-A-2351.jpg" />
+    <None Include="wwwroot\images\SK-A-2391.jpg" />
+    <None Include="wwwroot\images\SK-A-2860.jpg" />
+    <None Include="wwwroot\images\SK-A-3066.jpg" />
+    <None Include="wwwroot\images\SK-A-3137.jpg" />
+    <None Include="wwwroot\images\SK-A-3138.jpg" />
+    <None Include="wwwroot\images\SK-A-3262.jpg" />
+    <None Include="wwwroot\images\SK-A-3276.jpg" />
+    <None Include="wwwroot\images\SK-A-3298.jpg" />
+    <None Include="wwwroot\images\SK-A-3307.jpg" />
+    <None Include="wwwroot\images\SK-A-3340.jpg" />
+    <None Include="wwwroot\images\SK-A-3341.jpg" />
+    <None Include="wwwroot\images\SK-A-3477.jpg" />
+    <None Include="wwwroot\images\SK-A-358.jpg" />
+    <None Include="wwwroot\images\SK-A-3934.jpg" />
+    <None Include="wwwroot\images\SK-A-3981.jpg" />
+    <None Include="wwwroot\images\SK-A-3982.jpg" />
+    <None Include="wwwroot\images\SK-A-4019.jpg" />
+    <None Include="wwwroot\images\SK-A-4050.jpg" />
+    <None Include="wwwroot\images\SK-A-4057.jpg" />
+    <None Include="wwwroot\images\SK-A-4096.jpg" />
+    <None Include="wwwroot\images\SK-A-4119.jpg" />
+    <None Include="wwwroot\images\SK-A-4674.jpg" />
+    <None Include="wwwroot\images\SK-A-4691.jpg" />
+    <None Include="wwwroot\images\SK-A-4717.jpg" />
+    <None Include="wwwroot\images\SK-A-4833.jpg" />
+    <None Include="wwwroot\images\SK-A-4885.jpg" />
+    <None Include="wwwroot\images\SK-A-5033.jpg" />
+    <None Include="wwwroot\images\SK-A-91.jpg" />
+    <None Include="wwwroot\images\SK-C-1747.jpg" />
+    <None Include="wwwroot\images\SK-C-1768.jpg" />
+    <None Include="wwwroot\images\SK-C-216.jpg" />
+    <None Include="wwwroot\images\SK-C-251.jpg" />
+    <None Include="wwwroot\images\SK-C-5.jpg" />
+    <None Include="wwwroot\images\SK-C-597.jpg" />
+    <None Include="wwwroot\images\SK-C-6.jpg" />
+    <None Include="wwwroot\images\VanGogh.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="bootstrap" Version="5.3.0-alpha1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.14" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.1.23111.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0-preview.1.23111.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.1.23111.4" />
+	<PackageReference Include="Microsoft.NETCore" Version="5.0.2" />
+	<PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
+	<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

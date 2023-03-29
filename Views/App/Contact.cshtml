@@ -1,0 +1,49 @@
+﻿@using DutchTreat.ViewModels
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model ContactViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- Font Awesome CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<h2>Contact Us</h2>
+		<form method="post">
+			<div class="form-group">
+				<label asp-for="Name" class="control-label">Username:</label>
+				<input asp-for="Name" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Email" class="control-label">Email:</label>
+				<input asp-for="Email" class="form-control" type="email" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Subject" class="control-label">Subject:</label>
+				<input asp-for="Subject" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label asp-for="Message" class="control-label">Message:</label>
+				<textarea asp-for="Message" class="form-control" rows="4"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Send Message</button>
+			<div>@ViewBag.UserMessage</div>
+		</form>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-lZFHIB6MNF6z2EqZ2uA7mZ/xD9Un/ulL60hksBkTxT1jpxFa4fqaELvjgC4yUl4BRA6IPM6fSd4XTI4HiuW1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-5Ro5S5Q5dPe+4PqjcQ7yM6SyBc+7wLFRxIu2+qhGjZBNYlRzE9fwiSzGk+IGtvNkbtwCwNmnq/K3Z5hn5ZIdHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

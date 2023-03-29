@@ -1,0 +1,24 @@
+﻿@*@model IEnumerable<Product>
+@section Scripts{
+    <script src="~/clientpart/main.js" asp-append-version="true"></script>
+    <script src="~/clientpart/polyfills.js"></script>
+    <script src="~/clientpart/runtime.js"></script>
+
+}
+@section head
+    {
+    <base href="/App/Shop" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/clientpart/styles.css" rel="stylesheet" />
+}
+@{
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+<h1>Shop</h1>
+
+<p>Count: @Model.Count()</p>
+<the-shop></the-shop>
+*@

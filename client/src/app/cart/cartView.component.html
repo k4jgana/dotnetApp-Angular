@@ -1,0 +1,38 @@
+﻿<h3>Shopping Cart</h3>
+<div>Items in Cart: {{orderService.items.length}}</div>
+<!--<div>Subtotal: {{data.order.subtotal | currency:"USD":true }}</div>-->
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <td>Product</td>
+            <td>#</td>
+            <td>$</td>
+            <td>Total</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of orderService.items">
+            <td>
+                <img src="assets/img/{{o.productArtId}}.jpg" class="img-fluid product-thumbnail">
+            </td>
+            <td>{{o.productCategory}}</td>
+            <td>{{o.quantity}}</td>
+            <td>{{o.unitPrice | currency:"USD":true }}</td>
+            <td>
+                <button class="btn btn-danger" (click)="orderService.removeFromOrder(o.productId)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5">
+                Subtotal:{{orderService.order.subtotal | currency}}
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<a class="btn btn-success" *ngIf="orderService.order.items.length>0" routerLink="checkout">Checkout</a>
+
+<!--<button class="btn btn-success" *ngIf="data.order.items.length > 0" (click)="onCheckout()">Checkout</button>-->
+

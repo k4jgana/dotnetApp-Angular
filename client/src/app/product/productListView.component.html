@@ -1,0 +1,14 @@
+﻿<div class="products-container">
+    <div *ngFor="let p of products$ | async" class="product-card">
+      <img src="assets/img/{{p.artId}}.jpg" alt="image">
+      <h3>{{p.category}} - {{p.size}}</h3>
+      <ul class="products-props">
+        <li>Price: ${{p.price}}</li>
+        <li>Artist: {{p.artist}}</li>
+        <li>Title: {{p.title}}</li>
+        <li>Description: {{p.artDescription}}</li>
+      </ul>
+      <button id="buyButton" class="btn btn-success" (click)="orderService.addToOrder(p)">Buy</button>
+    </div>
+  </div>
+  
